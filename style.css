@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top left, #1e293b, #090d16);
+    color: #f8fafc;
+    padding: 1.5rem;
+}
+
+.glass-card {
+    width: 100%;
+    max-width: 440px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2.25rem;
+    text-align: center;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.6rem;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.75rem;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.95rem 1.5rem;
+    background: linear-gradient(135deg, #0284c7, #2563eb);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 12px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.4);
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 24px -5px rgba(37, 99, 235, 0.55);
+}
+
+.status-msg {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: #34d399;
+    min-height: 1.2rem;
+}
+
+.instructions {
+    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: left;
+}
+
+.instructions h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #cbd5e1;
+    margin-bottom: 0.75rem;
+}
+
+.instructions ol {
+    padding-left: 1.2rem;
+    color: #94a3b8;
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+.instructions li {
+    margin-bottom: 0.4rem;
+}

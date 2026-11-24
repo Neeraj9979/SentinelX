@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Android App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="glass-card">
+        <div class="badge">Android APK • v1.0.0</div>
+        <h1>Get the Mobile App</h1>
+        <p class="subtitle">
+            Download the official Android installation package directly to your device.
+        </p>
+
+        <!-- Direct APK Download Trigger -->
+        <a href="downloads/base.apk" download="AppRelease.apk" class="download-btn" id="downloadBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download APK
+        </a>
+
+        <p id="statusMsg" class="status-msg"></p>
+
+        <div class="instructions">
+            <h3>Installation Steps</h3>
+            <ol>
+                <li>Tap <strong>Download APK</strong> above and confirm if prompted by your browser.</li>
+                <li>Open your phone's <strong>Downloads</strong> folder or tap the notification once complete.</li>
+                <li>If prompted, enable <strong>Install from Unknown Sources</strong> for your browser, then tap <strong>Install</strong>.</li>
+            </ol>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+            const msg = document.getElementById('statusMsg');
+            msg.textContent = 'Download started! Check your notification bar.';
+        });
+    </script>
+</body>
+</html>
