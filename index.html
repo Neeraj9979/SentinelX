@@ -1,46 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Android App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SentinelX – AI-Powered Mobile Security and Privacy Guardian</title>
+  <meta name="description" content="SentinelX shows which Android apps can access your camera, microphone, contacts and location, and alerts you to suspicious activity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="glass-card">
-        <div class="badge">Android APK • v1.0.0</div>
-        <h1>Get the Mobile App</h1>
-        <p class="subtitle">
-            Download the official Android installation package directly to your device.
-        </p>
+  <div class="ambient" aria-hidden="true"><span class="orb orb-a"></span><span class="orb orb-b"></span></div>
 
-        <!-- Direct APK Download Trigger -->
-        <a href="downloads/base.apk" download="AppRelease.apk" class="download-btn" id="downloadBtn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                <polyline points="7 10 12 15 17 10"/>
-                <line x1="12" y1="15" x2="12" y2="3"/>
-            </svg>
-            Download APK
-        </a>
+  <header class="nav-glass">
+    <a class="brand" href="#top"><span class="brand-mark"></span>SentinelX</a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#permissions">Permissions</a>
+      <a href="#install">Install</a>
+      <a class="nav-cta" href="downloads/sentinelx.apk" download>Download</a>
+    </nav>
+  </header>
 
-        <p id="statusMsg" class="status-msg"></p>
+  <main class="spatial-container" id="top">
 
-        <div class="instructions">
-            <h3>Installation Steps</h3>
-            <ol>
-                <li>Tap <strong>Download APK</strong> above and confirm if prompted by your browser.</li>
-                <li>Open your phone's <strong>Downloads</strong> folder or tap the notification once complete.</li>
-                <li>If prompted, enable <strong>Install from Unknown Sources</strong> for your browser, then tap <strong>Install</strong>.</li>
-            </ol>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>See what your apps can see.</h1>
+        <p class="lead">SentinelX is an AI-powered Android guardian. It shows which apps can reach your camera, microphone, contacts and location, and warns you when something looks wrong.</p>
+        <div class="cta-row">
+          <a class="liquid-cta-primary" href="downloads/sentinelx.apk" download>Download for Android</a>
+          <a class="liquid-cta-secondary" href="#features">Explore features</a>
         </div>
-    </main>
+        <p class="meta">Free · Android · Version 1.0</p>
+      </div>
 
-    <script>
-        document.getElementById('downloadBtn').addEventListener('click', () => {
-            const msg = document.getElementById('statusMsg');
-            msg.textContent = 'Download started! Check your notification bar.';
+      <div class="stage" id="stage">
+        <div class="glass-card float-chip chip-alert">
+          <i></i><b>New alert</b><span>Flashlight Pro asked for microphone access.</span>
+        </div>
+        <div class="glass-card dashboard">
+          <div class="dash-head"><b>Security overview</b><span>Sample view</span></div>
+          <div class="ring" id="ring" style="--score:0"><div><strong id="score">0</strong><small>Device score</small></div></div>
+          <ul class="dash-stats">
+            <li><span>Apps reviewed</span><b>42</b></li>
+            <li><span>Permissions to check</span><b>7</b></li>
+            <li><span>Active alerts</span><b>3</b></li>
+          </ul>
+        </div>
+        <div class="glass-card float-chip chip-loc">
+          <i></i><b>Location access</b><span>5 apps can see where you are.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="steps">
+      <h2>Clear security in three steps</h2>
+      <ol>
+        <li class="glass-card"><b>Scan</b><p>SentinelX reviews your installed apps and the permissions each one holds.</p></li>
+        <li class="glass-card"><b>Understand</b><p>Risk analysis highlights apps that may need your attention, in plain language.</p></li>
+        <li class="glass-card"><b>Stay informed</b><p>Alerts and an activity history keep you aware of changes over time.</p></li>
+      </ol>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+      <h2>Everything you need to protect your privacy</h2>
+      <div class="bento">
+        <article class="glass-card tilt s3"><i></i><h3>App security</h3><p>Get an overview of every installed app and spot the ones that may need security attention.</p></article>
+        <article class="glass-card tilt s3"><i></i><h3>Privacy and permission monitoring</h3><p>Review who can use your camera, microphone, contacts and location, all in one place.</p></article>
+        <article class="glass-card tilt s2"><i></i><h3>Location privacy</h3><p>See which apps have location access and decide if they really need it.</p></article>
+        <article class="glass-card tilt s2"><i></i><h3>Security alerts</h3><p>Important warnings appear right away, so you can act on privacy concerns early.</p></article>
+        <article class="glass-card tilt s2"><i></i><h3>Risk analysis</h3><p>AI-assisted analysis of permissions and available security data points out potentially risky apps.</p></article>
+        <article class="glass-card tilt s3"><i></i><h3>Activity history</h3><p>A record of security events and alerts lets you look back at what happened and when.</p></article>
+        <article class="glass-card tilt s3"><i></i><h3>User dashboard</h3><p>One central place to open every security module and see your device's status at a glance.</p></article>
+      </div>
+    </section>
+
+    <!-- PERMISSION EXPLORER -->
+    <section class="inspector-shell" id="permissions">
+      <div class="inspector-head">
+        <h2>Who can access what?</h2>
+        <p>A sample of how SentinelX lays out permissions. Pick a permission to preview the view.</p>
+      </div>
+      <div class="tab-switcher" role="tablist">
+        <button role="tab" class="active" data-perm="camera">Camera</button>
+        <button role="tab" data-perm="microphone">Microphone</button>
+        <button role="tab" data-perm="location">Location</button>
+        <button role="tab" data-perm="contacts">Contacts</button>
+      </div>
+      <ul class="perm-list" id="perm-list" aria-live="polite"></ul>
+    </section>
+
+    <!-- INSTALL -->
+    <section class="install-dock" id="install">
+      <h2>Take control of your privacy today</h2>
+      <p>Download SentinelX for Android and see your device's security picture in minutes.</p>
+      <a class="liquid-cta-primary" href="downloads/sentinelx.apk" download>Download SentinelX</a>
+      <ol class="install-steps">
+        <li>Tap download</li>
+        <li>Open the file from your notifications or Downloads</li>
+        <li>Allow installation if Android asks, then open SentinelX</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 SentinelX. SentinelX provides security guidance and does not replace careful device habits.</p>
+  </footer>
+
+  <script>
+    // Sample data for the permission preview
+    const data = {
+      camera: [["Photo Studio","While using","ok"],["Video Chat","While using","ok"],["Flashlight Pro","Always allowed","risk"]],
+      microphone: [["Video Chat","While using","ok"],["Voice Notes","Ask every time","ok"],["Flashlight Pro","Always allowed","risk"]],
+      location: [["Maps Plus","While using","ok"],["Weather Now","Always allowed","watch"],["Wallpaper Hub","Always allowed","risk"]],
+      contacts: [["Messenger","Allowed","ok"],["Quick Cleaner","Allowed","watch"],["Game Arena","Allowed","risk"]]
+    };
+    const label = { ok: "Looks fine", watch: "Review", risk: "Needs attention" };
+    const list = document.getElementById('perm-list');
+    const tabs = document.querySelectorAll('.tab-switcher button');
+
+    function show(key) {
+      list.innerHTML = '';
+      data[key].forEach(([app, access, level]) => {
+        const li = document.createElement('li');
+        li.innerHTML = '<span class="app-dot"></span><div><b>' + app + '</b><small>' + access + '</small></div><em class="chip ' + level + '">' + label[level] + '</em>';
+        list.appendChild(li);
+      });
+    }
+    tabs.forEach(t => t.addEventListener('click', () => {
+      tabs.forEach(x => x.classList.remove('active'));
+      t.classList.add('active');
+      show(t.dataset.perm);
+    }));
+    show('camera');
+
+    // Score count-up
+    const ring = document.getElementById('ring'), scoreEl = document.getElementById('score');
+    const target = 82, reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) { ring.style.setProperty('--score', target); scoreEl.textContent = target; }
+    else {
+      let n = 0;
+      const timer = setInterval(() => {
+        n += 2;
+        if (n >= target) { n = target; clearInterval(timer); }
+        ring.style.setProperty('--score', n); scoreEl.textContent = n;
+      }, 22);
+    }
+
+    // 3D tilt
+    if (!reduce) {
+      const tilt = (el, max) => {
+        el.addEventListener('pointermove', e => {
+          const r = el.getBoundingClientRect();
+          const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+          el.style.setProperty('--ry', (x * max) + 'deg');
+          el.style.setProperty('--rx', (-y * max) + 'deg');
+          el.style.setProperty('--mx', (x + .5) * 100 + '%');
+          el.style.setProperty('--my', (y + .5) * 100 + '%');
         });
-    </script>
+        el.addEventListener('pointerleave', () => { el.style.setProperty('--rx', '0deg'); el.style.setProperty('--ry', '0deg'); });
+      };
+      tilt(document.getElementById('stage'), 14);
+      document.querySelectorAll('.tilt').forEach(c => tilt(c, 8));
+    }
+  </script>
 </body>
 </html>
